@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<launch>
+	<arg name="room" default="cave"/>
+    <arg name="headless" default="false"/>
+      <group if="$(arg headless)">
+  	    <node pkg="stage_ros" type="stageros" name="stageros" args="-g $(find tuw_douglas_demo)/cfg/maps/$(arg room)/stage.world" output="screen"/>
+      </group>
+      <group unless="$(arg headless)">
+  	    <node pkg="stage_ros" type="stageros" name="stageros" args="$(find tuw_douglas_demo)/cfg/maps/$(arg room)/stage.world" output="screen"/>
+      </group>
+</launch>

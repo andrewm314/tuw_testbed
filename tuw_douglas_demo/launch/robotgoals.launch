@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<launch>
+
+
+<arg name="nr_of_robots"                        default="1"         /> 
+  
+<!-- set goal locs -->
+<node pkg="tuw_multi_robot_goal_generator" type="goals_random" name="goals_broadcaster">
+  <param name="nr_of_robots" value="$(arg nr_of_robots)"/> 
+</node>
+
+
+</launch>

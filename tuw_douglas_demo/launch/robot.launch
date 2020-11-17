@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<launch>
+
+
+<arg name="nr_of_robots"                        default="1"         /> 
+<arg name="robot_name" default="robot_0"/>
+
+<!-- robot nodes launch -->
+<include file="$(find tuw_douglas_demo)/launch/local_controller.launch">
+  <arg name="robot_name" value="$(arg robot_name)" />
+</include>
+
+</launch>

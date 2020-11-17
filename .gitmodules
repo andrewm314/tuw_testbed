@@ -1,0 +1,6 @@
+[submodule "tuw_multi_robot"]
+	path = tuw_multi_robot
+	url = git@github.com:tuw-robotics/tuw_multi_robot.git
+[submodule "tuw_msgs"]
+	path = tuw_msgs
+	url = git@github.com:tuw-robotics/tuw_msgs.git
