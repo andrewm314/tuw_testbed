@@ -6,4 +6,5 @@
 	url = https://github.com/tuw-robotics/tuw_msgs
 [submodule "tuw_geometry"]
 	path = tuw_geometry
-	url = https://github.com/tuw-robotics/tuw_geometry
+	url = https://github.com/baluke/tuw_geometry
+    branch = opencv4
